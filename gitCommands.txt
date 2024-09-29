@@ -1,0 +1,16 @@
+cd Documents
+cd DATA541
+cd Labs
+cd Lab3Github
+git clone https://github.com/FosterLockerbie/data541lab3.git
+cd data541lab3
+git branch Markdown
+git checkout Markdown
+git status
+git add .
+git commit -m "Added md files"
+git push -u origin Markdown
+git checkout main
+git merge Markdown
+git push origin --delete Markdown
+git log --oneline
